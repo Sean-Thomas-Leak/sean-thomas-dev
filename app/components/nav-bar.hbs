@@ -1,0 +1,29 @@
+<div id="scroll-box">
+<div id="main-nav" class="pure-g">
+<div class="pure-u-1-2 pure-u-md-1-5" style="margin: auto;">Sean-Thomas L.</div>
+<div class="pure-u-md-4-5 link-box">
+<a href="#top" class="nav-bar-link">Home</a>
+<a href="#portfolio-box" class="anchor-offset nav-bar-link">Portfolio</a>
+<a href="#about-me-anchor" class="anchor-offset nav-bar-link">About Me</a>
+<a href="#services-anchor" class="anchor-offset nav-bar-link">Services</a>
+<a href="#contact-anchor" class="anchor-offset nav-bar-link">Contact</a>
+</div>
+
+<div class="pure-u-1-2 mobile-menu">
+    {{#if this.mmopen}}
+        <img id="close-mm" src="assets/close.png" {{on "click" this.toggleMenu}}>
+    {{else}}
+        <img id="open-mm" src="assets/menu.png" {{on "click" this.toggleMenu}}>
+    {{/if}}
+</div>
+</div>
+{{#if this.mmopen}}
+<div class="mm-link-box" {{on "click" this.toggleMenu}}>
+    <a href="#top" class="nav-bar-link">Home</a>
+    <a href="#portfolio-box" class="anchor-offset nav-bar-link">Portfolio</a>
+    <a href="#about-me-anchor" class="anchor-offset nav-bar-link">About Me</a>
+    <a href="#services-anchor" class="anchor-offset nav-bar-link">Services</a>
+    <a href="#contact-anchor" class="anchor-offset nav-bar-link">Contact</a>
+</div>
+{{/if}}
+</div>
